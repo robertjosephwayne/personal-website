@@ -1,1 +1,27 @@
-<p>header works!</p>
+<mat-toolbar>
+  <a routerLink="/" class="hover:text-green-600">
+    <span>Robert Joseph Wayne</span>
+  </a>
+  <span class="flex flex-grow"></span>
+
+  <nav mat-tab-nav-bar>
+    <a
+      mat-tab-link
+      routerLink="/portfolio"
+      routerLinkActive
+      #portfolioLink="routerLinkActive"
+      [active]="portfolioLink.isActive"
+    >
+      Portfolio
+    </a>
+    <a
+      mat-tab-link
+      routerLink="/contact"
+      routerLinkActive
+      #contactLink="routerLinkActive"
+      [active]="contactLink.isActive"
+    >
+      Contact
+    </a>
+  </nav>
+</mat-toolbar>
