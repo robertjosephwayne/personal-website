@@ -1,8 +1,8 @@
-@import 'tailwindcss/base';
+@import "tailwindcss/base";
 
-@import 'tailwindcss/components';
+@import "tailwindcss/components";
 
-@import 'tailwindcss/utilities';
+@import "tailwindcss/utilities";
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
@@ -17,5 +17,5 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Rubik, "Arial", sans-serif;
 }
