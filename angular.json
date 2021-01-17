@@ -117,8 +117,18 @@
               "devServerTarget": "personal-website:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/personal-website/"
+          }
         }
       }
-    }},
-  "defaultProject": "personal-website"
+    }
+  },
+  "defaultProject": "personal-website",
+  "cli": {
+    "analytics": false
+  }
 }
