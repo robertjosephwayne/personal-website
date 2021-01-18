@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { ProjectComponent } from './components/portfolio/project/project.component';
 import { MaterialModule } from './material.module';
 import { appReducer } from './store/app.reducer';
 
@@ -26,6 +27,7 @@ import { appReducer } from './store/app.reducer';
     ContactComponent,
     BannerComponent,
     ContactDetailsComponent,
+    ProjectComponent,
     FooterComponent,
     CallToActionComponent
   ],
