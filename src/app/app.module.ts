@@ -10,6 +10,7 @@ import { BannerComponent } from './banner/banner.component';
 import { CallToActionComponent } from './components/call-to-action/call-to-action.component';
 import { ContactDetailsComponent } from './components/contact/contact-details/contact-details.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
@@ -25,6 +26,7 @@ import { appReducer } from './store/app.reducer';
     ContactComponent,
     BannerComponent,
     ContactDetailsComponent,
+    FooterComponent,
     CallToActionComponent
   ],
   imports: [
