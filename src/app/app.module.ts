@@ -6,6 +6,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BannerComponent } from './banner/banner.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
@@ -19,7 +20,8 @@ import { appReducer } from './store/app.reducer';
     HeaderComponent,
     HomeComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    BannerComponent,
   ],
   imports: [
     BrowserModule,
