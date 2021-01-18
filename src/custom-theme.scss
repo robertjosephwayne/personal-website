@@ -75,6 +75,10 @@ $personal-website-accent: mat-palette($tw-emerald, 500, 300, 600);
 // The warn palette is optional (defaults to red).
 $personal-website-warn: mat-palette($tw-red, 600, 400, 900);
 
+$custom-typography: mat-typography-config(
+  $font-family: "Rubik, monospace",
+);
+
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
 $personal-website-theme: mat-light-theme(
@@ -90,4 +94,5 @@ $personal-website-theme: mat-light-theme(
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
+@include angular-material-typography($custom-typography);
 @include angular-material-theme($personal-website-theme);
