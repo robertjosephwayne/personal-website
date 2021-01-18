@@ -1,4 +1,4 @@
-<mat-toolbar class="bg-gray-900 text-white 2xl:px-8">
+<mat-toolbar class="bg-darkGray text-white 2xl:px-8">
   <mat-toolbar-row class="max-w-7xl mx-auto mt-12">
     <a
       routerLink="/"
@@ -6,45 +6,49 @@
     >
       <span class="mb-4">ROBERT JOSEPH WAYNE</span>
       <span
-        class="h-2 w-1/2 group-hover:w-2/12 bg-blue-700 rounded-3xl transition-all duration-500 ease-in-out"
+        class="h-2 w-1/2 group-hover:w-2/12 bg-green-300 rounded-3xl transition-all duration-500 ease-in-out"
       ></span>
     </a>
 
     <span class="flex flex-grow"></span>
 
-    <a
-      routerLink="/portfolio"
-      class="inline-flex flex-col group text-gray-400 mx-6 tracking-wider"
-    >
-      <span
-        routerLinkActive="text-white"
-        class="group-hover:text-white transition-all duration-500 ease-in-out mb-4"
+    <div class="inline-flex justify-center w-32 text-center">
+      <a
+        routerLink="/portfolio"
+        class="inline-flex flex-col group text-gray-400 tracking-wider"
       >
-        Portfolio
-      </span>
-      <span
-        routerLinkActive="active-link-border"
-        class="h-2 w-1/12 opacity-0 group-hover:opacity-100 group-hover:w-10/12 bg-blue-700 rounded-3xl mx-auto transition-all duration-500 ease-in-out"
-      >
-      </span>
-    </a>
+        <span
+          routerLinkActive="text-white"
+          class="group-hover:text-white transition-all duration-500 ease-in-out mb-4"
+        >
+          Portfolio
+        </span>
+        <span
+          routerLinkActive="active-link-border"
+          class="h-2 w-1/12 opacity-0 group-hover:opacity-100 group-hover:w-full bg-green-300 rounded-3xl mx-auto transition-all duration-500 ease-in-out"
+        >
+        </span>
+      </a>
+    </div>
 
-    <a
-      routerLink="/contact"
-      class="inline-flex flex-col group text-gray-400 mx-6 tracking-wider"
-    >
-      <span
-        routerLinkActive="text-white"
-        class="group-hover:text-white transition-all duration-500 ease-in-out mb-4"
+    <div class="inline-flex justify-center w-32 text-center">
+      <a
+        routerLink="/contact"
+        class="inline-flex flex-col group text-gray-400 tracking-wider"
       >
-        Contact
-      </span>
-      <span
-        routerLinkActive="active-link-border"
-        class="h-2 w-1/12 opacity-0 group-hover:opacity-100 group-hover:w-10/12 bg-blue-700 rounded-3xl mx-auto transition-all duration-500 ease-in-out"
-      >
-      </span>
-    </a>
+        <span
+          routerLinkActive="text-white"
+          class="group-hover:text-white transition-all duration-500 ease-in-out mb-4"
+        >
+          Contact
+        </span>
+        <span
+          routerLinkActive="active-link-border"
+          class="h-2 w-1/12 opacity-0 group-hover:opacity-100 group-hover:w-full bg-green-300 rounded-3xl mx-auto transition-all duration-500 ease-in-out"
+        >
+        </span>
+      </a>
+    </div>
   </mat-toolbar-row>
   <!-- <a>
     <img src="../../../assets/GitHub-Mark/PNG/GitHub-Mark-32px.png" />
