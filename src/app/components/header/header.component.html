@@ -1,56 +1,57 @@
 <mat-toolbar class="bg-darkGray text-white 2xl:px-8">
   <mat-toolbar-row class="max-w-7xl mx-auto mt-12">
-    <a
-      routerLink="/"
-      class="inline-flex flex-col group text-2xl tracking-widest"
-    >
-      <span class="mb-4">ROBERT JOSEPH WAYNE</span>
+    <a routerLink="/" class="inline-flex flex-col group">
+      <span class="mb-3 text-3xl font-medium">ROBERT JOSEPH WAYNE</span>
       <span
-        class="h-2 w-1/2 group-hover:w-2/12 bg-green-300 rounded-3xl transition-all duration-500 ease-in-out"
+        class="h-1 w-3/4 group-hover:w-2/12 bg-green-300 rounded-3xl transition-all duration-500 ease-in-out"
       ></span>
     </a>
 
     <span class="flex flex-grow"></span>
 
-    <div class="inline-flex justify-center w-32 text-center">
+    <div class="inline-flex flex-col group justify-center w-32 text-center">
       <a
         routerLink="/portfolio"
-        class="inline-flex flex-col group text-gray-400 tracking-wider"
+        routerLinkActive
+        #rlaPortfolio="routerLinkActive"
+        class="text-gray-400 mb-3"
       >
         <span
           routerLinkActive="text-white"
-          class="group-hover:text-white transition-all duration-500 ease-in-out mb-4"
+          class="group-hover:text-white text-xl font-light transition-all duration-500 ease-in-out"
         >
           Portfolio
         </span>
-        <span
-          routerLinkActive="active-link-border"
-          class="h-2 w-1/12 opacity-0 group-hover:opacity-100 group-hover:w-full bg-green-300 rounded-3xl mx-auto transition-all duration-500 ease-in-out"
-        >
-        </span>
       </a>
+      <span
+        [ngClass]="{ 'active-link-border': rlaPortfolio.isActive }"
+        class="h-1 w-1/12 opacity-0 group-hover:opacity-100 group-hover:w-3/4 bg-green-300 rounded-3xl mx-auto transition-all duration-500 ease-in-out"
+      >
+      </span>
     </div>
 
-    <div class="inline-flex justify-center w-32 text-center">
+    <div class="inline-flex flex-col group justify-center w-32 text-center">
       <a
         routerLink="/contact"
-        class="inline-flex flex-col group text-gray-400 tracking-wider"
+        routerLinkActive
+        #rlaContact="routerLinkActive"
+        class="text-gray-400 mb-3"
       >
         <span
           routerLinkActive="text-white"
-          class="group-hover:text-white transition-all duration-500 ease-in-out mb-4"
+          class="group-hover:text-white text-xl font-light transition-all duration-500 ease-in-out"
         >
           Contact
         </span>
-        <span
-          routerLinkActive="active-link-border"
-          class="h-2 w-1/12 opacity-0 group-hover:opacity-100 group-hover:w-full bg-green-300 rounded-3xl mx-auto transition-all duration-500 ease-in-out"
-        >
-        </span>
       </a>
+      <span
+        [ngClass]="{ 'active-link-border': rlaContact.isActive }"
+        class="h-1 w-1/12 opacity-0 group-hover:opacity-100 group-hover:w-3/4 bg-green-300 rounded-3xl mx-auto transition-all duration-500 ease-in-out"
+      >
+      </span>
     </div>
   </mat-toolbar-row>
   <!-- <a>
-    <img src="../../../assets/GitHub-Mark/PNG/GitHub-Mark-32px.png" />
+    
   </a> -->
 </mat-toolbar>
