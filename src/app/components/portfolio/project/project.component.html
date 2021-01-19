@@ -1,18 +1,31 @@
-<div class="flex justify-center">
+<div class="flex justify-center items-center space-x-16">
   <mat-card class="max-w-xl mat-elevation-z3">
-    <img
-      src="../../../../assets/portfolio/game-of-life/game-of-life-screenshot.png"
-    />
+    <img [src]="previewSrc" />
   </mat-card>
-  <div class="flex flex-col">
-    Screenshot
-    {{ title }}
-    {{ description }}
-    <ul>
-      <li *ngFor="let subheader of subheaders">
-        {{ subheader }}
-      </li>
-    </ul>
-    <a href="{{ link }}">View Details</a>
+  <div class="max-w-lg">
+    <h2 class="text-4xl font-normal">
+      {{ title }}
+    </h2>
+    <p class="text-2xl text-gray-600 font-light mt-3 leading-relaxed">
+      {{ description }}
+    </p>
+    <div class="my-6">
+      <ul
+        class="flex flex-col space-y-6 text-xl text-gray-500 font-medium tracking-wider"
+      >
+        <li *ngFor="let subheader of subheaders">
+          {{ subheader.toUpperCase() }}
+        </li>
+      </ul>
+    </div>
+    <div class="flex pt-2">
+      <a
+        [href]="appLink"
+        class="text-xl text-green-600 font-normal border-2 border-green-600 rounded-full px-7 py-4 transition duration-300 ease-in-out hover:bg-green-600 hover:text-white"
+        target="_blank"
+      >
+        View Details
+      </a>
+    </div>
   </div>
 </div>
