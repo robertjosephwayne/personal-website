@@ -6,7 +6,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BannerComponent } from './banner/banner.component';
+import { BannerComponent } from './components/banner/banner.component';
 import { CallToActionComponent } from './components/call-to-action/call-to-action.component';
 import { ContactDetailsComponent } from './components/contact/contact-details/contact-details.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -17,6 +17,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ProjectComponent } from './components/portfolio/project/project.component';
 import { MaterialModule } from './material.module';
 import { appReducer } from './store/app.reducer';
+import { HomeBannerComponent } from './components/home/home-banner/home-banner.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { appReducer } from './store/app.reducer';
     ContactDetailsComponent,
     ProjectComponent,
     FooterComponent,
-    CallToActionComponent
+    CallToActionComponent,
+    HomeBannerComponent
   ],
   imports: [
     BrowserModule,
