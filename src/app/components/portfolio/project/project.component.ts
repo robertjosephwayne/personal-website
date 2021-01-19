@@ -8,8 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProjectComponent implements OnInit {
   @Input() title: string;
   @Input() description: string;
-  @Input() link: string;
+  @Input() appLink: string;
   @Input() subheaders: string[];
+  @Input() previewSrc: string;
 
   constructor() { }
 
