@@ -1,13 +1,15 @@
 <app-banner
   [title]="'Portfolio'"
-  [subtitle]="'Placeholder subtitle for the portfolio page'"
+  [subtitle]="
+    'The examples below show a few projects that I am currently working on or have recently completed.'
+  "
 ></app-banner>
 
 <div class="py-24 flex flex-col items-center space-y-32">
   <app-project
     [title]="'Game of Life'"
     [description]="
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum leo eu risus laoreet, non faucibus tellus sagittis.'
+      'The Game of Life is a cellular automaton devised by the British mathematician John Horton Conway in 1970.'
     "
     [subheaders]="['Angular', 'Material Design', 'Tailwind CSS']"
     [appLink]="'https://robertjosephwayne.github.io/angular-game-of-life/'"
@@ -17,24 +19,24 @@
   <mat-divider class="w-3/4"></mat-divider>
 
   <app-project
-    [title]="'Project 2'"
+    [title]="'To Do List'"
     [description]="
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum leo eu risus laoreet, non faucibus tellus sagittis.'
+      'To Do List is a simple task manager which allows users to manage multiple projects.'
     "
-    [subheaders]="['Angular', 'Material Design', 'Tailwind CSS']"
-    [appLink]="'#'"
+    [subheaders]="['Angular', 'LoopBack', 'MongoDB']"
+    [appLink]="'https://github.com/robertjosephwayne/todo-list-client'"
     [previewSrc]="'https://via.placeholder.com/1024x768.png'"
   ></app-project>
 
   <mat-divider class="w-3/4"></mat-divider>
 
   <app-project
-    [title]="'Project 3'"
+    [title]="'Tomatoz'"
     [description]="
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum leo eu risus laoreet, non faucibus tellus sagittis.'
+      'Tomatoz is a mobile productivity application based on the Pomodoro Technique for time management.'
     "
-    [subheaders]="['Angular', 'Material Design', 'Tailwind CSS']"
-    [appLink]="'#'"
+    [subheaders]="['Angular', 'NativeScript', 'MongoDB']"
+    [appLink]="''"
     [previewSrc]="'https://via.placeholder.com/1024x768.png'"
   ></app-project>
 </div>
