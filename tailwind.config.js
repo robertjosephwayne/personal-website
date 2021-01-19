@@ -4,7 +4,11 @@ module.exports = {
   purge: ["./src/**/*.{html,ts}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xs: "37.5rem",
+      },
+    },
     colors: {
       transparent: "transparent",
       current: "currentColor",
