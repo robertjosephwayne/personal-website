@@ -3,11 +3,34 @@
   [subtitle]="'Placeholder subtitle for the portfolio page'"
 ></app-banner>
 
-<div class="py-24">
+<div class="py-24 flex flex-col space-y-32">
   <app-project
     [title]="'Game of Life'"
-    [description]="'Placeholder description for Game of Life'"
-    [subheaders]="['Subheader 1', 'Subheader 2', 'Subheader 3']"
-    [link]="'#'"
+    [description]="
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum leo eu risus laoreet, non faucibus tellus sagittis.'
+    "
+    [subheaders]="['Angular', 'Material Design', 'Tailwind CSS']"
+    [appLink]="'https://robertjosephwayne.github.io/angular-game-of-life/'"
+    [previewSrc]="'https://via.placeholder.com/1024x768.png'"
+  ></app-project>
+
+  <app-project
+    [title]="'Project 2'"
+    [description]="
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum leo eu risus laoreet, non faucibus tellus sagittis.'
+    "
+    [subheaders]="['Angular', 'Material Design', 'Tailwind CSS']"
+    [appLink]="'#'"
+    [previewSrc]="'https://via.placeholder.com/1024x768.png'"
+  ></app-project>
+
+  <app-project
+    [title]="'Project 3'"
+    [description]="
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum leo eu risus laoreet, non faucibus tellus sagittis.'
+    "
+    [subheaders]="['Angular', 'Material Design', 'Tailwind CSS']"
+    [appLink]="'#'"
+    [previewSrc]="'https://via.placeholder.com/1024x768.png'"
   ></app-project>
 </div>
