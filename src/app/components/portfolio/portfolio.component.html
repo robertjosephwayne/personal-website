@@ -1,46 +1,49 @@
 <div class="flex flex-col h-full">
-<app-banner
-  [title]="'Portfolio'"
-  [subtitle]="
-    'The examples below show a few projects that I am currently working on or have recently completed.'
-  "
-></app-banner>
-
-<div class="py-24 flex flex-col items-center space-y-24 md:space-y-32">
-  <app-project
-    [title]="'Game of Life'"
-    [description]="
-      'The Game of Life is a cellular automaton devised by the British mathematician John Horton Conway in 1970.'
+  <app-banner
+    [title]="'Portfolio'"
+    [subtitle]="
+      'The examples below show a few projects that I am currently working on or have recently completed.'
     "
-    [subheaders]="['Angular', 'Material Design', 'Tailwind CSS']"
-    [appLink]="'https://robertjosephwayne.github.io/angular-game-of-life/'"
-    [previewSrc]="'https://via.placeholder.com/1024x768.png'"
-  ></app-project>
+  ></app-banner>
 
-  <mat-divider class="w-3/4"></mat-divider>
+  <div class="py-24 flex flex-col items-center space-y-24 md:space-y-32">
+    <app-project
+      [title]="'Game of Life'"
+      [description]="
+        'The Game of Life is a cellular automaton devised by the British mathematician John Horton Conway in 1970.'
+      "
+      [subheaders]="['Angular', 'Material Design', 'Tailwind CSS']"
+      [appLink]="'https://robertjosephwayne.github.io/angular-game-of-life/'"
+      [previewSrc]="
+        '../../../assets/portfolio/game-of-life/game-of-life-screenshot.png'
+      "
+    ></app-project>
+    <mat-divider class="w-3/4"></mat-divider>
 
-  <app-project
-    [title]="'To Do List'"
-    [description]="
-      'To Do List is a simple task manager which allows users to manage multiple projects.'
-    "
-    [subheaders]="['Angular', 'LoopBack', 'MongoDB']"
-    [appLink]="'https://github.com/robertjosephwayne/todo-list-client'"
-    [previewSrc]="'https://via.placeholder.com/1024x768.png'"
-  ></app-project>
+    <app-project
+      [title]="'To Do List'"
+      [description]="
+        'To Do List is a simple task manager which allows users to manage multiple projects.'
+      "
+      [subheaders]="['Angular', 'LoopBack', 'MongoDB']"
+      [appLink]="'https://github.com/robertjosephwayne/todo-list-client'"
+      [previewSrc]="
+        '../../../assets/portfolio/todo-list/todo-list-screenshot-no-nav.png'
+      "
+    ></app-project>
 
-  <mat-divider class="w-3/4"></mat-divider>
+    <mat-divider class="w-3/4"></mat-divider>
 
-  <app-project
-    [title]="'Tomatoz'"
-    [description]="
-      'Tomatoz is a mobile productivity application based on the Pomodoro Technique for time management.'
-    "
-    [subheaders]="['Angular', 'NativeScript', 'MongoDB']"
-    [appLink]="''"
-    [previewSrc]="'https://via.placeholder.com/1024x768.png'"
-  ></app-project>
-</div>
+    <app-project
+      [title]="'Tomatoz'"
+      [description]="
+        'Tomatoz is a mobile productivity application based on the Pomodoro Technique for time management.'
+      "
+      [subheaders]="['Angular', 'NativeScript', 'MongoDB']"
+      [appLink]="''"
+      [previewSrc]="'https://via.placeholder.com/1024x768.png'"
+    ></app-project>
+  </div>
 
-<app-call-to-action></app-call-to-action>
+  <app-call-to-action></app-call-to-action>
 </div>
