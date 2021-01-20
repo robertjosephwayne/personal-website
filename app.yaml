@@ -1,0 +1,60 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+skip_files:
+  - ^(?!dist) # Skip any files not in the dist folder
+handlers:
+  - url: /(.+\.js)
+    static_files: dist/personal-website/\1
+    upload: dist/personal-website/(.+\.js)
+    secure: always
+    redirect_http_response_code: 301
+
+  - url: /(.+\.css)
+    static_files: dist/personal-website/\1
+    upload: dist/personal-website/(.+\.css)
+    secure: always
+    redirect_http_response_code: 301
+
+  - url: /(.+\.png)
+    static_files: dist/personal-website/\1
+    upload: dist/personal-website/(.+\.png)
+    secure: always
+    redirect_http_response_code: 301
+
+  - url: /(.+\.jpg)
+    static_files: dist/personal-website/\1
+    upload: dist/personal-website/(.+\.jpg)
+    secure: always
+    redirect_http_response_code: 301
+
+  - url: /(.+\.svg)
+    static_files: dist/personal-website/\1
+    upload: dist/personal-website/(.+\.svg)
+    secure: always
+    redirect_http_response_code: 301
+
+  - url: /favicon.ico
+    static_files: dist/personal-website/favicon.ico
+    upload: dist/personal-website/favicon.ico
+    secure: always
+    redirect_http_response_code: 301
+
+  - url: /(.+\.json)
+    static_files: dist/personal-website/\1
+    upload: dist/personal-website/(.+\.json)
+    secure: always
+    redirect_http_response_code: 301
+
+  - url: /(.+)
+    static_files: dist/personal-website/index.html
+    upload: dist/personal-website/index.html
+    secure: always
+    redirect_http_response_code: 301
+
+  - url: /
+    static_files: dist/personal-website/index.html
+    upload: dist/personal-website/index.html
+    secure: always
+    redirect_http_response_code: 301
