@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-project',
@@ -12,9 +12,14 @@ export class ProjectComponent implements OnInit {
   @Input() subheaders: string[];
   @Input() previewSrc: string;
 
+  @ViewChild('preview', { static: true }) preview: ElementRef;
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  getBackgroundUrl() {
+    return `url(${this.previewSrc})`;
   }
 
 }
