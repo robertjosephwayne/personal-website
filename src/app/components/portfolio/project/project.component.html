@@ -1,9 +1,9 @@
 <div class="flex flex-wrap justify-center items-center">
-  <mat-card class="max-w-xl mat-elevation-z3 mx-8 md:mx-12">
+  <mat-card class="max-w-xl mat-elevation-z4 m-10">
     <img *ngIf="previewSrc" [src]="previewSrc" />
     <div *ngIf="!previewSrc" class="w-screen h-96"></div>
   </mat-card>
-  <div class="max-w-lg mx-8 py-6">
+  <div class="max-w-lg mx-8">
     <h2 class="text-4xl font-normal">
       {{ title }}
     </h2>
@@ -22,7 +22,7 @@
     <div class="flex pt-2">
       <a
         [href]="appLink"
-        class="text-xl text-green-600 font-normal border-2 border-green-600 rounded-full px-7 py-4 transition duration-300 ease-in-out hover:bg-green-600 hover:text-white"
+        class="text-xl hover:text-green-600 font-normal border-2 border-green-600 rounded-full px-7 py-4 transition duration-300 ease-in-out bg-green-600 hover:bg-white text-white"
         target="_blank"
         *ngIf="appLink"
       >
