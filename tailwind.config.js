@@ -6,20 +6,9 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        92: "23rem",
-        102: "25.5rem",
-        106: "26.5rem",
-        110: "27.5rem",
-        114: "28.5rem",
-        130: "32.5rem",
         150: "37.5rem",
-        180: "45rem",
       },
-      height: {
-        92: "23rem",
-        116: "29rem",
-        120: "30rem",
-      },
+      height: {},
       screens: {
         xs: "37.5rem",
       },
