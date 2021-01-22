@@ -12,12 +12,12 @@ import { ContactDetailsComponent } from './components/contact/contact-details/co
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { HomeBannerComponent } from './components/home/home-banner/home-banner.component';
 import { HomeComponent } from './components/home/home.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ProjectComponent } from './components/portfolio/project/project.component';
 import { MaterialModule } from './material.module';
 import { appReducer } from './store/app.reducer';
-import { HomeBannerComponent } from './components/home/home-banner/home-banner.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import { HomeBannerComponent } from './components/home/home-banner/home-banner.c
     ProjectComponent,
     FooterComponent,
     CallToActionComponent,
-    HomeBannerComponent
+    HomeBannerComponent,
   ],
   imports: [
     BrowserModule,
