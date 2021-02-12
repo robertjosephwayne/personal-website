@@ -1,7 +1,7 @@
-<div class="flex flex-wrap justify-center items-center">
+<div class="flex flex-wrap items-center justify-center">
   <div class="grid m-6 sm:m-10 sm:w-150 justify-items-center">
     <img
-      class="rounded-md mat-elevation-z8 max-w-11/12 sm:w-auto sm:max-w-xl max-h-96 h-auto"
+      class="h-auto rounded-md max-w-11/12 sm:w-auto sm:max-w-xl max-h-96"
       [src]="previewSrc"
     />
   </div>
@@ -9,12 +9,12 @@
     <h2 class="text-4xl font-normal">
       {{ title }}
     </h2>
-    <p class="text-2xl text-gray-600 font-light mt-3 leading-relaxed">
+    <p class="mt-3 text-2xl font-light leading-relaxed text-gray-600">
       {{ description }}
     </p>
     <div class="my-6">
       <ul
-        class="flex flex-col space-y-6 text-xl text-gray-500 font-medium tracking-wider"
+        class="flex flex-col space-y-6 text-xl font-medium tracking-wider text-gray-500"
       >
         <li *ngFor="let subheader of subheaders">
           {{ subheader.toUpperCase() }}
@@ -24,7 +24,7 @@
     <div class="flex pt-2">
       <a
         [href]="appLink"
-        class="mat-elevation-z3 text-xl hover:text-green-600 font-normal border-2 border-green-600 rounded-full px-7 py-4 transition duration-300 ease-in-out bg-green-600 hover:bg-white text-white"
+        class="py-4 text-xl font-normal text-white transition duration-300 ease-in-out bg-green-600 border-2 border-green-600 rounded-full mat-elevation-z3 hover:text-green-600 px-7 hover:bg-white"
         target="_blank"
         *ngIf="appLink"
       >
