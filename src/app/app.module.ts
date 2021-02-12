@@ -7,6 +7,7 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { ActionButtonsComponent } from './components/call-to-action/action-buttons/action-buttons.component';
 import { CallToActionComponent } from './components/call-to-action/call-to-action.component';
 import { ContactDetailsComponent } from './components/contact/contact-details/contact-details.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -32,6 +33,7 @@ import { appReducer } from './store/app.reducer';
     FooterComponent,
     CallToActionComponent,
     HomeBannerComponent,
+    ActionButtonsComponent,
   ],
   imports: [
     BrowserModule,
